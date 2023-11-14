@@ -8,28 +8,13 @@
     src: url(Font/Regular.ttf);
 }
 
-@keyframes bg {
-  
-  0%  {background: -webkit-linear-gradient(#4A688C, #DCBCA7); background-repeat: no-repeat;   background-position: center;
-    background-size: 100%, 100%;
-    background-attachment: fixed;
-    background-blend-mode: lighten;
-  
+@keyframes nav-select {
+  from{
+    font-size: 17px;
   }
-  50% {background: -webkit-linear-gradient(#DCBCA7, #4A688C); background-repeat: no-repeat;   background-position: center;
-    background-size: 100%, 100%;
-    background-attachment: fixed;
-    background-blend-mode: lighten;
-  
+  to{
+    font-size: 25px;
   }
-
-  100%  {background: -webkit-linear-gradient(#4A688C, #DCBCA7); background-repeat: no-repeat;   background-position: center;
-    background-size: 100%, 100%;
-    background-attachment: fixed;
-    background-blend-mode: lighten;
-  
-  }
-
 }
 
 /* Add a black background color to the top navigation */
@@ -59,6 +44,9 @@
     color: #260801;
     border-radius: 50px;
     font-family: bold;
+    animation: nav-select;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
   }
   
   /* Add a color to the active/current link */
@@ -191,8 +179,42 @@ img {
   align-content: center;
   line-height: 8px;
   display: inline-flex;
+  box-shadow: 15px 7px 15px 3px rgba(0,0,0,.8); 
+
 
 }
+
+.card-black {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  height: 512px;
+  width: 512px;
+  background-size: 100%, 100%;
+  align-items: center;
+  align-content: center;
+  display: inline-flex;
+  box-shadow: 15px 7px 15px 3px rgba(0,0,0,.8); 
+
+}
+
+.card-large {
+  background: -webkit-linear-gradient(#4A688C, #DCBCA7);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  height: 570px;
+  width: 94%;
+  background-size: 100%, 100%;
+  align-items: center;
+  align-content: center;
+  line-height: 8px;
+  padding: 15px 40px;
+  box-shadow: 15px 7px 15px 3px rgba(0,0,0,.8); 
+}
+
+
 
 h2 {
   font-size: 60px;
@@ -277,4 +299,10 @@ a {
   border-radius: 50px;
   display: inline-flex;
 }
+
+.pad {
+  padding: 0px 65px;
+}
+
+
 

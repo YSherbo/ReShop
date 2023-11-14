@@ -5,7 +5,11 @@
         <title>
             Store
         </title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />          
+        
+        <script src="script.js">
+        </script>
+
     </head>    
 
 
@@ -18,10 +22,106 @@
             <a href="#about">About</a>
           </div>
           <br><br><br>
-          <center>
-                      <h1>
+          
+          <h1 class="pad">
             Just Added
           </h1>
+          <center>
+          <div class="card-large">
+            <button onclick="recentPrev()" class="black"  >
+              <div class="grad">
+                <
+              </div>
+              
+            </button>
+            <div class="card-black">
+              <center>
+                <br>
+              <img class="rounded" src="images/iphone.jpg" id="card1_IMG" width="90%" height="60%">
+  
+              <h2 id="card1_TITLE">
+                iPhone 15 Pro
+              </h2>
+  
+              <p id="card1_PRICE">
+                900$
+              </p>
+  
+              <button class="black">
+                <div class="grad">
+                      Add To Cart  
+                </div>
+              </button>
+   
+              </center>
+  
+  
+  
+            </div>
+
+            <div class="card-black">
+              <center>
+                <br>
+              <img class="rounded" src="images/prime.jpg" id="card2_IMG" width="90%" height="60%">
+  
+              <h2 id="card2_TITLE">
+                Prime : Lemon
+              </h2>
+  
+              <p id="card2_PRICE">
+                900$
+              </p>
+  
+              <button class="black">
+                <div class="grad">
+                      Add To Cart  
+                </div>
+              </button>
+   
+              </center>
+  
+  
+  
+            </div>
+
+            <div class="card-black">
+              <center>
+                <br>
+              <img class="rounded" src="images/razor Kraken.jpg" id="card3_IMG" width="90%" height="60%">
+  
+              <h2 id="card3_TITLE">
+                Razor Kraken X
+              </h2>
+  
+              <p id="card3_PRICE">
+                900$
+              </p>
+  
+              <button class="black">
+                <div class="grad">
+                      Add To Cart  
+                </div>
+              </button>
+   
+              </center>
+  
+  
+  
+            </div>
+
+            <button class="black" onclick="recentNext()">
+              <div class="grad">
+                >
+              </div>
+
+
+
+
+
+
+          </div>
+
+          <br><br>
 
           </center>
             <div class="card">
@@ -73,8 +173,6 @@
 
 
 
-          <script src="script.js">
-        </script>
 
 
 
