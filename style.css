@@ -17,6 +17,25 @@
   }
 }
 
+@keyframes button-hover {
+  from{
+    font-size: 30px;
+  }
+  to{
+    font-size: 40px;
+  }
+}
+
+@keyframes button2-hover {
+  from{
+    font-size: 30px;
+  }
+  to{
+    font-size: 35px;
+  }
+}
+
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #000000a2;
@@ -195,6 +214,7 @@ img {
   align-items: center;
   align-content: center;
   display: inline-flex;
+  line-height: 8px;
   box-shadow: 15px 7px 15px 3px rgba(0,0,0,.8); 
 
 }
@@ -209,7 +229,6 @@ img {
   background-size: 100%, 100%;
   align-items: center;
   align-content: center;
-  line-height: 8px;
   padding: 15px 40px;
   box-shadow: 15px 7px 15px 3px rgba(0,0,0,.8); 
 }
@@ -235,10 +254,21 @@ p {
 button {
   border-radius: 50px;
   border: #00000000;
-  font-family: normal;
+  font-family: bold;
   font-size: 30px;
   padding: 15px 40px;
   box-shadow: 15px 7px 15px 3px rgba(0,0,0,.8); 
+}
+
+button:hover {
+  border-radius: 50px;
+  border: #00000000;
+  font-family: bold;
+  padding: 15px 40px;
+  box-shadow: 15px 7px 15px 3px rgba(0,0,0,.8);
+  animation: button-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 .black {
@@ -284,8 +314,6 @@ h3 {
   background: -webkit-linear-gradient(#4A688C, #DCBCA7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
 }
 
 a {
@@ -304,5 +332,26 @@ a {
   padding: 0px 65px;
 }
 
+h4 {
+  font-family: bold;
+  font-size: 60px;
+  background: -webkit-linear-gradient(#4A688C, #DCBCA7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
+}
 
+.onec {
+  color: #DCBCA7;
+}
+
+.pad2 {
+  padding: 2px, 2px;
+  background-color: black;
+}
+
+.pad2:hover {
+  animation: button2-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
