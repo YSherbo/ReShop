@@ -35,6 +35,17 @@
   }
 }
 
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(calc(-250px * 5));
+  }
+  
+}
+
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -180,7 +191,6 @@ footer {
 img {
   transition: 2s;
   overflow: hidden;
-  flex-basis: 50%;
   border-radius: 50px;
   box-shadow: 15px 15px 15px 15px rgba(0,0,0,.8); 
 
@@ -316,6 +326,10 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
+.inline {
+  display: inline;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -354,4 +368,52 @@ h4 {
   animation: button2-hover;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
+}
+
+.imageSlider {
+  height: 60%;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.sliderTrack {
+  display: flex;
+  width: calc(1620px * 10);
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  height: 500px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  perspective: 100px;
+  padding: 15px;
+}
+
+.imageSlider::before,
+.imageSlider::after {
+  background: linear-gradient(to right, black 0%, black 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 5;
+}
+
+.imageSlider::before {
+  left: 0;
+  top: 0;
+  width: 1px;
+}
+
+.imageSlider::after {
+  right: 0;
+  top: 0;
+  width: 1px;
+
 }
